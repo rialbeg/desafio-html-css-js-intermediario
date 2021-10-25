@@ -1,0 +1,75 @@
+html{
+    font-size:62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: #e5e5e5;
+}
+
+.faq{
+    width:80%;
+    margin:10px auto;
+    display: flex;
+    
+}
+.faq img{
+    width:278px;
+    margin-top: 20px;
+    z-index: 5;
+}
+
+.faq .acordeon{
+    background: white;
+    border-radius: 10px;
+    width: 755px;
+    margin-left: -90px;
+    display: flex;
+    justify-content: flex-end;
+}
+.faq .accordions{
+    width:82%;
+    padding:20px;
+}
+
+.faq .accordions h2{
+    font-size:2.5rem;
+    font-weight:700;
+    margin-bottom: 30px;
+}
+
+
+.accordion-item input{
+    display:none;
+}
+
+
+.accordion-item img{
+    width:15px;
+    position:absolute;
+    top:-7%;
+    right:10%;
+}
+.active-arrow{
+    content:url('../imagens/seta-colorida.png');
+}
+.accordion-item label{
+    display:block;
+    cursor:pointer;
+	padding:10px 0;
+    font-size:1.7rem;
+    font-weight: 700;
+    position: relative;
+}
+hr.line{
+    border-top: 1px solid black;
+    opacity: 0.2;
+}
+.accordion-content{
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+[id^=accordion]:checked ~ .accordion-content {
+    height: 100px;
+}
