@@ -1,0 +1,6 @@
+@media (max-width:669px){
+    .contato .text{
+        flex-basis: 100%;
+        margin-top:20px;
+    }
+}
